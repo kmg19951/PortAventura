@@ -23,6 +23,6 @@ public class Hotel {
 		this.nombre = nombre;
 	}
 	
-	
+	//TEST 
 
 }
