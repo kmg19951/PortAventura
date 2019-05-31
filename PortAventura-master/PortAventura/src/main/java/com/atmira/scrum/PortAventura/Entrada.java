@@ -21,10 +21,9 @@ public class Entrada {
 		this.precio = precio;
 	}
 
-	public Entrada(String fecha, double precio) {
+	public Entrada(String fecha) {
 		super();
 		this.fecha = fecha;
-		this.precio = precio;
 	}
 
 	public Entrada() {
