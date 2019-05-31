@@ -1,11 +1,16 @@
 package com.atmira.scrum.PortAventura;
 
 public class Habitacion {
+	
 	private double precio;
 	private int numero;
 	private boolean disponible;
+	private Reserva reserva;
 	
-	
+	public Habitacion() {
+		super();
+	}
+
 	public Habitacion(double precio, int numero, boolean disponible) {
 		super();
 		this.precio = precio;
@@ -31,6 +36,22 @@ public class Habitacion {
 	public void setDisponible(boolean disponible) {
 		this.disponible = disponible;
 	}
+
+	public Reserva getReserva() {
+		return reserva;
+	}
+
+	public void setReserva(Reserva reserva) {
+		this.reserva = reserva;
+	}
+
+	@Override
+	public String toString() {
+		return "Habitacion [precio=" + precio + ", numero=" + numero + ", disponible=" + disponible + ", reserva="
+				+ reserva + "]";
+	}
+	
+	
 	
 	
 }
