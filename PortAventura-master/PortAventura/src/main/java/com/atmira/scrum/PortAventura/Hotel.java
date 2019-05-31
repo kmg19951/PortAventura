@@ -3,7 +3,7 @@ package com.atmira.scrum.PortAventura;
 import java.util.ArrayList;
 
 public class Hotel {
-	
+	//Welcome
 	private int numHab;
 	private String nombre;
 	private ArrayList<Habitacion> listaDeHabitaciones = new ArrayList<Habitacion>();

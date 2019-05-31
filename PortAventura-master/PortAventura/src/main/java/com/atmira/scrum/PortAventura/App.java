@@ -8,18 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-    
-    	Hotel num = new Hotel(5, "Paradise" );
-    	Hotel num2 = new Hotel(10, "Paradise");
-    	
-    	for (Habitacion habitacion : num.getListaDeHabitaciones()) {
-			System.out.println(habitacion);
-		}
-    	
-    	
-    	for (Habitacion habitacion : num2.getListaDeHabitaciones()) {
-			System.out.println(habitacion);
-		}
     	
     	Scanner in = new Scanner(System.in);
     	int accion = 0;

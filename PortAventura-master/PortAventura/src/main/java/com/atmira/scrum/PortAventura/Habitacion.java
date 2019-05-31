@@ -1,7 +1,7 @@
 package com.atmira.scrum.PortAventura;
 
 public class Habitacion {
-	
+	//Welcome
 	private double precio;
 	private int numero;
 	private boolean disponible;
