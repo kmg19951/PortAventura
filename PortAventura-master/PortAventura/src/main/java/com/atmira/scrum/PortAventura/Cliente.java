@@ -35,8 +35,8 @@ public class Cliente {
 		return telefono;
 	}
 
-	public void setTelefono(int telefono) {
-		this.telefono = telefono;
+	public void setTelefono(int texto) {
+		this.telefono = texto;
 	}
 
 	public Cliente(String nom, String apellidos, String dni, int telefono) {
