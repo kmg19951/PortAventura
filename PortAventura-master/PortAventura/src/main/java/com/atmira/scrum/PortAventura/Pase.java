@@ -1,4 +1,4 @@
-package com.atmira.parque;
+package com.atmira.scrum.PortAventura;
 
 public class Pase {
 	private String fecha;

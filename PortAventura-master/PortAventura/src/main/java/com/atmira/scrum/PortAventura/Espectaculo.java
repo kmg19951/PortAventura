@@ -1,4 +1,4 @@
-package com.atmira.parque;
+package com.atmira.scrum.PortAventura;
 
 public class Espectaculo {
 	private String tipoEspectaculo;

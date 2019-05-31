@@ -1,4 +1,4 @@
-package com.atmira.Exercicis.ParcAtraccions;
+package com.atmira.scrum.PortAventura;
 
 public class Cliente {
 

@@ -1,4 +1,4 @@
-package com.atmira.parque;
+package com.atmira.scrum.PortAventura;
 
 public class Butaca {
 	private boolean ocupada = false;
