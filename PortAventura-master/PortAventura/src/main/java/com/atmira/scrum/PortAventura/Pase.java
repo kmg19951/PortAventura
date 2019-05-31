@@ -9,12 +9,11 @@ public class Pase {
 		super();
 	}
 
-	public Pase(String fecha, String hora, int butaca) {
+	public Pase(String fecha, String hora, int butaca, Espectaculo espectaculo) {
 		super();
 		this.fecha = fecha;
 		this.hora = hora;
-		Espectaculo espe = new Espectaculo();
-		if (butacasDisponibles(espe.getAforo())) {
+		if (butacasDisponibles(espectaculo.getAforo())) {
 			this.butaca += butaca;
 		}
 

@@ -19,10 +19,10 @@ public class Cliente {
 
 	// cliente-entrada-pase
 	public Cliente(String nom, String apellidos, String dni, int telefono, String fecha, String fechaPase, String hora,
-			int butaca) {
+			int butaca, Espectaculo espectaculo) {
 		super();
 		Entrada entrada = new Entrada(fechaPase);
-		Pase pase = new Pase(fechaPase, hora, butaca);
+		Pase pase = new Pase(fechaPase, hora, butaca, espectaculo);
 		this.nom = nom;
 		this.apellidos = apellidos;
 		this.dni = dni;
@@ -43,10 +43,10 @@ public class Cliente {
 
 	// cliente-entrada-reversa-pase
 	public Cliente(String nom, String apellidos, String dni, int telefono, String fecha, String fechaIn,
-			String fechaOut, String datosHab, String fechaPase, String hora, int butaca) {
+			String fechaOut, String datosHab, String fechaPase, String hora, int butaca, Espectaculo espectaculo) {
 		super();
 		Entrada entrada = new Entrada(fecha);
-		Pase pase = new Pase(fechaPase, hora, butaca);
+		Pase pase = new Pase(fechaPase, hora, butaca, espectaculo);
 		Reserva reserva = new Reserva(nom, apellidos, dni, telefono, fechaIn, fechaOut, datosHab);
 		this.nom = nom;
 		this.apellidos = apellidos;
