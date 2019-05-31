@@ -15,6 +15,7 @@ public class Hotel {
 		crearHabitaciones();
 	}
 	
+
 	public int getNumHab() {
 		return numHab;
 	}
@@ -28,6 +29,15 @@ public class Hotel {
 		this.nombre = nombre;
 	}
 
+	private void crearHabitaciones() {
+		//Habitacion 
+		for(int i=0;i<numHab;i++) {
+			
+		}
+		
+	}
+
+	
 	@Override
 	public String toString() {
 		return "Hotel [numHab=" + numHab + ", nombre=" + nombre + "]";

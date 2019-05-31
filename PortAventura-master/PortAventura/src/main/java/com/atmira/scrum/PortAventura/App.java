@@ -2,7 +2,7 @@ package com.atmira.scrum.PortAventura;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import com.atmira.scrum.PortAventura.Aplicaciones.aplicaciones;
+
 
 public class App 
 {
