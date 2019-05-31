@@ -31,4 +31,10 @@ public class Espectaculo {
 		this.aforo = aforo;
 	}
 
+	@Override
+	public String toString() {
+		return "\n\t\t\t\t"+tipoEspectaculo + ", aforo: " + aforo;
+	}
+
+	
 }

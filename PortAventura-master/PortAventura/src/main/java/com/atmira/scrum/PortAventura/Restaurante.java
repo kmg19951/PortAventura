@@ -41,4 +41,10 @@ public class Restaurante {
 		this.precioMedio = precioMedio;
 	}
 
+	@Override
+	public String toString() {
+		return "\n\t\t\t\t"+nombre + ", horario: " + horario + ", precio medio: " + precioMedio;
+	}
+
+	
 }

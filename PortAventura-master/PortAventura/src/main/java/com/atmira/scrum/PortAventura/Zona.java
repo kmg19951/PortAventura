@@ -14,10 +14,6 @@ public class Zona {
 	private ArrayList<Atraccion> listaDeAtraccion = new ArrayList<Atraccion>();
 
 	// Constructores
-	public Zona() {
-		super();
-	}
-
 	public Zona(String nombre, String descripcion, String color, Hotel hotel,
 			ArrayList<Espectaculo> listaDeEspectaculos, ArrayList<Tienda> listaDeTienda,
 			ArrayList<Restaurante> listaDeRestaurante, ArrayList<Atraccion> listaDeAtraccion) {
@@ -99,9 +95,9 @@ public class Zona {
 
 	@Override
 	public String toString() {
-		return "Zona [color=" + color + ", descripcion=" + descripcion + ", hotel=" + hotel + ", listaDeAtraccion="
-				+ listaDeAtraccion + ", listaDeEspectaculos=" + listaDeEspectaculos + ", listaDeRestaurante="
-				+ listaDeRestaurante + ", listaDeTienda=" + listaDeTienda + ", nombre=" + nombre + "]";
+		return  "\n\t\t"+nombre + ", color: " + color + ", descripcion: " + descripcion + "\n\t\t\t Hotel: " + hotel + "\n\t\t\t Atracciones: "
+				+ listaDeAtraccion + "\n\t\t\t Espectaculos: " + listaDeEspectaculos + "\n\t\t\t Restaurantes: "
+				+ listaDeRestaurante + "\n\t\t\t Tiendas: " + listaDeTienda;
 	}
 
 }
