@@ -1,8 +1,6 @@
 package com.atmira.scrum.PortAventura;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-import com.atmira.scrum.PortAventura.Aplicaciones.aplicaciones;
 
 public class App 
 {
@@ -40,42 +38,42 @@ public class App
     }
 
 	private static void escogerAccion(int accion) {
-		
+		Aplicaciones a = new Aplicaciones();
 		switch (accion) {
 		case 1:
-			  aplicaciones.consultarInfoParque();
+			  a.consultarInfoParque();
 			break;
 			
 		case 2:
-			  aplicaciones.modificarParque();
+			  a.modificarParque();
 			break;
 			
 		case 3:
-			  aplicaciones.consultarInfoParque();
+			  a.consultarInfoParque();
 			break;
 			
 		case 4:
-			  aplicaciones.crearCliente();
+			  a.crearCliente();
 			break;
 			
 		case 5:
-			  aplicaciones.modificarParque();
+			  a.modificarParque();
 			break;	
 			
 		case 6:
-			  aplicaciones.eliminarCliente();
+			  a.eliminarCliente();
 			break;
 			
 		case 7:
-			  aplicaciones.consultarInfoCliente();
+			  a.consultarInfoCliente();
 			break;	
 			
 		case 8:
-			  aplicaciones.listarClientes();
+			  a.listarClientes();
 			break;
 			
 		case 9:
-			  aplicaciones.reservarHabitacion();
+			  a.reservarHabitacion();
 			break;	
 			
 		default:
