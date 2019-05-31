@@ -30,4 +30,10 @@ public class Tienda {
 		this.horario = horario;
 	}
 
+	@Override
+	public String toString() {
+		return "\n\t\t\t\t"+nombre + ", horario: " + horario;
+	}
+
+	
 }

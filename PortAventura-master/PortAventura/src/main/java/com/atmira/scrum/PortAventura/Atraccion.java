@@ -38,6 +38,13 @@ public class Atraccion {
 	public void setDuracion(double duracion) {
 		this.duracion = duracion;
 	}
+
+	@Override
+	public String toString() {
+		return "\n\t\t\t\t"+nombre + ", estatura: " + estatura + ", capacidad: " + capacidad + ", duracion: "
+				+ duracion;
+	}
+	
 	
 	
 }
