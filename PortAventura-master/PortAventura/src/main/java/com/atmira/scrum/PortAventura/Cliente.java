@@ -7,6 +7,61 @@ public class Cliente {
 	private String dni;
 	private int telefono;
 
+	// cliente-entrada
+	public Cliente(String nom, String apellidos, String dni, int telefono, String fecha) {
+		super();
+		Entrada entrada = new Entrada(fecha);
+		this.nom = nom;
+		this.apellidos = apellidos;
+		this.dni = dni;
+		this.telefono = telefono;
+	}
+
+	// cliente-entrada-pase
+	public Cliente(String nom, String apellidos, String dni, int telefono, String fecha, String fechaPase, String hora,
+			int butaca) {
+		super();
+		Entrada entrada = new Entrada(fechaPase);
+		Pase pase = new Pase(fechaPase, hora, butaca);
+		this.nom = nom;
+		this.apellidos = apellidos;
+		this.dni = dni;
+		this.telefono = telefono;
+	}
+
+	// cliente-entrada-reversa
+	public Cliente(String nom, String apellidos, String dni, int telefono, String fecha, double precio, String fechaIn,
+			String fechaOut, String datosHab) {
+		super();
+		Entrada entrada = new Entrada(fecha);
+		Reserva reserva = new Reserva(nom, apellidos, dni, telefono, fechaIn, fechaOut, datosHab);
+		this.nom = nom;
+		this.apellidos = apellidos;
+		this.dni = dni;
+		this.telefono = telefono;
+	}
+
+	// cliente-entrada-reversa-pase
+	public Cliente(String nom, String apellidos, String dni, int telefono, String fecha, String fechaIn,
+			String fechaOut, String datosHab, String fechaPase, String hora, int butaca) {
+		super();
+		Entrada entrada = new Entrada(fecha);
+		Pase pase = new Pase(fechaPase, hora, butaca);
+		Reserva reserva = new Reserva(nom, apellidos, dni, telefono, fechaIn, fechaOut, datosHab);
+		this.nom = nom;
+		this.apellidos = apellidos;
+		this.dni = dni;
+		this.telefono = telefono;
+	}
+
+	public Cliente(String nom, String apellidos, String dni, int telefono) {
+		super();
+		this.nom = nom;
+		this.apellidos = apellidos;
+		this.dni = dni;
+		this.telefono = telefono;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -37,14 +92,6 @@ public class Cliente {
 
 	public void setTelefono(int texto) {
 		this.telefono = texto;
-	}
-
-	public Cliente(String nom, String apellidos, String dni, int telefono) {
-		super();
-		this.nom = nom;
-		this.apellidos = apellidos;
-		this.dni = dni;
-		this.telefono = telefono;
 	}
 
 	public Cliente() {
